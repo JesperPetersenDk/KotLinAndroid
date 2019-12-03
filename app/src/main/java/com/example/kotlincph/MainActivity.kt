@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
 
         for (button in buttons)
         {
-            button.setOnClickListener(
+            button.setOnClickListener {
                 textView.setText(textView.text.toString()+button.text.toString())
-            )
+            }
         }
     }
 }
