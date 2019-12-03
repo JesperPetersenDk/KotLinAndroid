@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 
         for (button in buttons)
         {
+            if(button.text.equals("C"))
+            {
+                textView.setText("")
+            }
             button.setOnClickListener {
                 textView.setText(textView.text.toString()+button.text.toString())
             }
